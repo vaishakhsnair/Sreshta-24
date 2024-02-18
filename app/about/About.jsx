@@ -46,17 +46,6 @@ function StudentCouncil({data}){
       </div>
     ))}
   </div>
-  <div className="flex flex-wrap justify-center space-x-4 space-y-4 h-max border-2 border-white">
-    {data.Members.map((member, index) => (
-      <div key={index} className="relative flex flex-col items-center w-48 h-72 bg-center bg-cover mt-1" style={{backgroundImage: `url(/about/FrameMain.png)`}}>
-      <img src={member.image} alt={member.name} className="object-cover w-full h-full" />
-      <div className="absolute bottom-10 text-center text-white">
-        <h3 className="text-xl  font-[Bangers]">{member.name}</h3>
-        <p className="text-lg font-[GoodDog]">{member.designation}</p>
-      </div>
-    </div>
-    ))}
-  </div>
 </div>
   );
 
