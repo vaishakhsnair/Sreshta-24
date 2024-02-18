@@ -8,15 +8,15 @@ import mediaclub from './MediaClub.json';
 
 export default function AboutPage() {
   return (
-    <div className='bg-[#D6ECEC] flex flex-col justify-center items-center gap-8'>
-      <nav className="flex items-center justify-between p-6 w-full h-[20vh]">
+    <div className='bg-[#D6ECEC] flex-col justify-center'>
+      <nav className="flex items-center justify-between p-6 ">
         <div className="text-2xl font-bold">Logo</div>
       </nav>
-      <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl our-team-main-text mt-9'>OUR TEAM</p>
-      <p className="w-full h-10 sm:h-16 md:h-20 lg:h-24 py-auto mt-[-5vh] font-[GoodDog] text-lg sm:text-xl md:text-2xl lg:text-3xl self-center text-center text-black">
+      <p className='our-team-main-text'>OUR TEAM</p>
+      <p className="w-full h-[10vh] py-auto mt-[-5vh] font-[GoodDog] text-[2em] self-center text-center text-black">
         The Heroes, the Legends, the Myths
       </p>
-      <div className="w-full min-h-[140vh] sm:min-h-[150vh] md:min-h-[160vh] lg:min-h-[170vh] bg-[url('/about/about-people-2.png')] bg-cover bg-no-repeat bg-bottom">
+      <div className="w-full min-h-[140vh] bg-[url('/about/about-people-2.png')] bg-cover bg-no-repeat bg-bottom">
         {/* Background Image */}
       </div>
         <StudentCouncil data={data} />
